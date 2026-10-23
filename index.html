@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Para ti</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <canvas id="petalos"></canvas>
+  <audio id="musica" loop src="musica/cancion.mp3"></audio>
+  <button id="btnMusica" class="redondo" hidden aria-label="Música">🎵</button>
+
+  <!-- PARTE 1 -->
+  <section id="parte1" class="parte activa">
+    <p class="pre">Hay algo que quiero decirte</p>
+    <h1 id="nombre">Mi Amor</h1>
+    <p class="adorno">❦</p>
+    <button id="btnDecir" class="btn">Dímelo</button>
+  </section>
+
+  <!-- PARTE 2 -->
+  <section id="parte2" class="parte">
+    <svg id="corazon" viewBox="0 0 100 90" aria-label="Corazón">
+      <path d="M50 85 C10 55 0 30 15 15 C28 3 45 10 50 25 C55 10 72 3 85 15 C100 30 90 55 50 85 Z" fill="#e0457b"/>
+      <path d="M22 22 C28 14 38 14 42 20" stroke="#fff" stroke-opacity="0.5" stroke-width="3" fill="none" stroke-linecap="round"/>
+    </svg>
+    <h2 id="teamo"></h2>
+    <p id="mensaje"></p>
+    <p id="pista" class="pista" hidden>Toca la pantalla ♥</p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
